@@ -1,0 +1,44 @@
+<style>
+  .area-selection select {
+    width: 100%;
+  }
+  .mini-cart__footer .area-selection {
+    margin-bottom: 1rem;
+  }
+  h2.location-name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-left: 0;
+    text-align: start;
+  }
+  .cityList-Wrap,
+  .area-selection {
+    width: 100%;
+  }
+</style>
+
+<city-selection class="area-selection">
+  <!-- City Dropdown -->
+  <div class="cityList-Wrap">
+    <h2 class="location-name">Select City</h2>
+    <select class="select__select" id="cityDropdown">
+      <option value="" disabled selected>Select City</option>
+    </select>
+    <span id="cityDropdownErrorText" style="display: none; color:red">* Please select a city</span>
+  </div>
+
+  <!-- Area Dropdown -->
+  <div class="areaList-Wrap" style="display: none;">
+    <h2 class="location-name">Select Area</h2>
+    <select class="select__select" id="areaDropdown">
+      <option value="" disabled selected>Select Area</option>
+    </select>
+    <span id="areaDropdownErrorText" style="display: none; color:red">* Please select an area</span>
+  </div>
+
+  <!-- Shipping Warning -->
+  <div id="shippingWarning" style="display:none; color: red;">
+    Shipping charges may vary for this area.
+  </div>
+</city-selection>
+
