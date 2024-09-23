@@ -13,7 +13,7 @@ This solution is particularly beneficial for businesses operating in Dubai or an
 **1. Adding the Global JavaScript**
 
 * Global.js: This file contains the JavaScript code responsible for dynamically populating the city and area dropdowns, handling user selections, and redirecting the user to the checkout page with the correct shipping details.
-* 
+  
 **Steps:**
 
 * Copy the code from your Global.js file in this repository.
