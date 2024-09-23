@@ -16,5 +16,25 @@ This solution is particularly beneficial for businesses operating in Dubai or an
   
 **Steps:**
 
-* Copy the code from your Global.js file in this repository.
+* Copy the code from Global.js file in this repository.
 * Paste the code into your Shopify store's global JavaScript file or directly in the theme's theme.js file.
+
+**2. Adding the Area Selection Snippet**
+
+* **area-selection.liquid**: This file contains the HTML and CSS for the city and area dropdowns.
+  
+**Steps:**
+
+* Create a new snippet in your Shopify store named area-selection.liquid.
+* Paste the content of the area-selection.liquid file into this snippet.
+  
+**3. Rendering the Snippet in the Cart Page**
+
+To display the city and area selection dropdowns on the cart page, add the following code to your cart.liquid file:
+**{% render 'area-selection' %}**
+
+This will render the city and area selection dropdowns on the cart page, allowing customers to select their city and area before proceeding to checkout.
+
+**4. Testing the Integration**
+After completing the above steps, navigate to your store's cart page and test the dropdowns to ensure they are working correctly. Select a city, choose the corresponding area, and proceed to checkout to verify that the correct information is passed to the checkout process.
+
